@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>List Anak Daddy</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .neon {
+      font-weight: bold;
+      color: #39ff14;
+      text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+    }
+
+    #tapText {
+      font-size: 28px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #listText {
+      font-size: 18px;
+      white-space: pre-wrap;
+      text-align: left;
+      margin-top: 20px;
+      max-width: 90%;
+      position: absolute;
+      animation: fadeSlideLoop 8s ease-in-out infinite;
+      display: none;
+    }
+
+    @keyframes fadeSlideLoop {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      15% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      85% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="tapText" class="neon" onclick="showList()">Tapi Text Ini</div>
+
+  <div id="listText" class="neon">
+List anak-anak daddy
+
+daddy: noah  @swrtypi
+istri nya daddy: naren @naren_nnn 
+
+anak 1: veyra @veyveyra 
+anak 2: veraa @mverrraa 
+anak 3: azka @jkwnh 
+anak 4: danielle danielle 
+anak 5: devan @DevanzGaG
+anak 6: echel @iMrslouvrew
+anak 7: rachel @rachelchelchelchelchel
+anak 8: everlyn @erevlyn
+anak 9: queen @queenfakmen
+anak 10: uby @emilyrbvrc
+anak 11: zeann @dangeroussswomann
+anak 12: ziel @ellgcr
+anak 13: mikayla @ipWriting 
+anak 14: cella @Cimollyummy 
+anak 15: dewa @dewadgros
+anak 16: gevanya @gevanyaavynnvincent
+anak 17: cherry @Cherrybelleyn
+  </div>
+
+  <script>
+    function showList() {
+      document.getElementById("tapText").style.display = "none";
+      document.getElementById("listText").style.display = "block";
+    }
+  </script>
+</body>
+</html>
